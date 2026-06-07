@@ -1,0 +1,5 @@
+ROBCO C:\> version
+
+ROBCO-OS ALPHA 0.1
+Built on Arch Linux
+Powered by Hyprland
