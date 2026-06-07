@@ -56,10 +56,64 @@ while True:
     print("5. Shutdown")
     print()
 
-    command = input("C:\\> ").strip().lower()
+command = input("C:\\> ").strip().lower()
 
     if command in ["1", "steam"]:
         os.system("steam &")
 
     elif command in ["2", "heroic"]:
         os.system("heroic &")
+
+    elif command in ["3", "files"]:
+        os.system("dolphin &")
+
+    elif command in ["4", "settings"]:
+        print("Settings not implemented yet.")
+        input("Press Enter...")
+
+    elif command in ["5", "shutdown"]:
+        break
+
+    elif command == "help":
+        print("""
+    AVAILABLE COMMANDS
+
+    steam      Launch Steam
+    heroic     Launch Heroic
+    files      Open File Manager
+    status     System Status
+    about      About RobCo-OS
+    clear      Clear Screen
+    exit       Exit Shell
+    """)
+        input("Press Enter...")
+    
+    elif command == "status":
+        os.system("fastfetch")
+        input("Press Enter...")
+   
+    elif command == "about":
+        print("""
+    ROBCO-OS ALPHA
+    
+    Built on:
+    - Arch Linux
+    - Hyprland
+    - Kitty
+
+    Project Founder: JPC
+    """)
+        input("Press Enter...")
+
+    elif command == "clear":
+        continue
+
+    elif command == "exit":
+        break
+
+    else:
+        print("COMMAND NOT RECOGNIZED")
+        input("Press Enter...")
+
+
+    
