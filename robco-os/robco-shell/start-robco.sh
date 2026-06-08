@@ -2,4 +2,6 @@
 
 cd ~/Projects/robco-os/robco-shell
 
-kitty --hold python3 robco.py
+kitty \
+  --start-as fullscreen \
+  python3 robco.py
