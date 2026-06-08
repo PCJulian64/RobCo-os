@@ -1,8 +1,13 @@
 import time
 import os
 
+GREEN = "\033[92m"
+RESET = "\033[0m"
+
 def boot():
     os.system("clear")
+
+    print(GREEN)
 
     print("ROBCO INDUSTRIES (TM)")
     time.sleep(0.5)
@@ -23,4 +28,7 @@ def boot():
     time.sleep(0.5)
 
     print("\nWELCOME USER")
+
+    print(RESET)
+
     time.sleep(1)
